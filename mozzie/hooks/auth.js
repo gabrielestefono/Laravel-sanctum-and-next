@@ -21,6 +21,7 @@ export const useAuth = () => {
     );
 
     // CSRF
+    const csrf = () => axios.get("/sanctum/csrf-cookie");
 
     // Login
 
